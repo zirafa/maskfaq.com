@@ -1,5 +1,8 @@
+
+
 // Wait for the document to load before running the script 
 (function ($) {
+  new Tablesort(document.getElementById('materials-data'));
   
   // We use some Javascript and the URL #fragment to hide/show different parts of the page
   // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#Linking_to_an_element_on_the_same_page
