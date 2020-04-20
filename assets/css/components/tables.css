@@ -21,6 +21,9 @@ tr.odd {
   border:none;
   padding: 0;
 }
+tr:nth-child(even) {
+  background-color: #222222;
+}
 th,
 td {
   padding: 5px 10px;
