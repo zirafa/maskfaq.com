@@ -41,7 +41,7 @@ th, th a {
 }
 
 tr:hover{
-  background-color:#f6e58d;
+  background-color:rgba(255, 255, 0, .2);
 }
 tr:hover td {
   color:#111;
