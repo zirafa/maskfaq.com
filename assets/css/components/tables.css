@@ -40,10 +40,10 @@ th, th a {
   border-color:#666;
 }
 
-tr:hover{
+tbody tr:hover{
   background-color:rgba(255,255,255,.6); /*#f6e58d;*/
 }
-tr:hover td {
+tbody tr:hover td {
   color:#222;
 }
 
