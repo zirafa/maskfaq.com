@@ -21,9 +21,7 @@ tr.odd {
   border:none;
   padding: 0;
 }
-tr:nth-child(even) {
-  background-color: #222222;
-}
+
 th,
 td {
   padding: 5px 10px;
@@ -40,4 +38,11 @@ th, th a {
   font-size:1.2rem;
   text-transform:uppercase;
   border-color:#666;
+}
+
+tr:hover{
+  background-color:#f6e58d;
+}
+tr:hover td {
+  color:#111;
 }
