@@ -140,5 +140,12 @@ ul.main-menu li a.active {
   display:block;
 }
 
+ul.definitions {
+  list-style:none;
+}
+ul.definitions li {
+  margin:0;
+  padding:0;
+}
 
 
