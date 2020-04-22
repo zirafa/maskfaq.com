@@ -10,7 +10,7 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #111111;
 }
 
@@ -122,14 +122,14 @@ ul.main-menu li a {
   margin-right:20px;
   font-size:2.0rem;
   border-bottom: solid transparent 3px;
-  color:#666666;
+  color:#888888;
 }
 ul.main-menu li a:hover {
   color:#222222;
 }
 ul.main-menu li a.active {
   color:#222222;
-  border-bottom-color:#EF6D3D;
+  border-bottom-color:#3498db;
 }
 
 /* Utility classes */
