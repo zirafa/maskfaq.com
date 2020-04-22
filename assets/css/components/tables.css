@@ -29,7 +29,6 @@ td {
   border-color: #e1e1e1;
   border-width: 0 0 1px 0;
   border-style:solid;
-  color:#FFF;
 }
 table.sticky-header {
   background:#000;
@@ -41,10 +40,10 @@ th, th a {
 }
 
 tbody tr:hover{
-  background-color:rgba(255,255,255,.6); /*#f6e58d;*/
+  background-color:rgba(0,0,0,.6); /*#f6e58d;*/
 }
 tbody tr:hover td {
-  color:#222;
+  color:#EEEEEE;
 }
 
 
