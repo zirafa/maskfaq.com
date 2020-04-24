@@ -135,9 +135,9 @@ ul.main-menu li a.active {
 }
 
 
-ul.main-menu li.donate a.donate,
-ul.main-menu li.donate a.donate:hover,
-ul.main-menu li.donate a.donate.active {
+ul.main-menu li a.donate,
+ul.main-menu li a.donate:hover,
+ul.main-menu li a.donate.active {
   color:#dd4b39;  
 }
 
