@@ -3,7 +3,7 @@
 // Wait for the document to load before running the script 
 (function ($) {
   new Tablesort(document.getElementById('materials-data'), {
-    ascending: true
+    descending: true
   });
   
   // We use some Javascript and the URL #fragment to hide/show different parts of the page
