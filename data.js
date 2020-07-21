@@ -191,7 +191,7 @@ function tableModifiers() {
     title: 'Filter efficiency of most breathable materials',
     yaxis:{title: 'Filtration Efficiency (%)'},
     xaxis:{
-      title: 'Materials (hover to view details)',
+      title: 'Materials with Resistance < 15 mmh20 (hover to view details)',
       showticklabels:false 
     }
   };
