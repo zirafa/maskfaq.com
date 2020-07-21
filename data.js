@@ -192,7 +192,8 @@ function tableModifiers() {
     yaxis:{title: 'Filtration Efficiency (%)'},
     xaxis:{
       title: 'Materials with Resistance < 15 (hover to view details)',
-      showticklabels:false 
+      showticklabels:false,
+      categoryorder: "min ascending"
     }
   };
  
