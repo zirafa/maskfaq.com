@@ -157,7 +157,7 @@ function tableModifiers() {
       trace1.marker.symbol.push(shape);
       
       if (resistance < 15) {
-        // bar1.x.unshift(name);
+        bar1.x.unshift(name);
         bar1.y.unshift(filtration);
         bar1.text.unshift(resistance);
         bar1.marker.color.unshift(filtration-resistance)
@@ -190,13 +190,7 @@ function tableModifiers() {
     title: 'Filter efficiency of most breathable materials',
     yaxis:{title: 'Filtration Efficiency (%)'},
     xaxis:{title: 'Materials (hover to view details)'},
-    showlegend: false,
-    margin: {
-      b:250
-    },
-    xaxis: {
-      tickangle: -90
-    }
+    showlegend: false
   };
  
   Plotly.newPlot('bar-chart', barData, barLayout);
