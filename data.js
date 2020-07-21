@@ -190,7 +190,7 @@ function tableModifiers() {
     title: 'Filter efficiency of most breathable materials',
     showlegend: false,
     margin: {
-      b:225
+      b:200
     },
     xaxis: {
       tickangle: -45
