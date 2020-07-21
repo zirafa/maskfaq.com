@@ -161,7 +161,7 @@ function tableModifiers() {
         bar1.x.unshift(name);
         bar1.y.unshift(filtration);
         bar1.text.unshift(resistance);
-        bar1.marker.color.unshift(filtration-resistance)
+        bar1.marker.color.unshift(resistance)
       }
 
     }
