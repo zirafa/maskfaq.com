@@ -1,8 +1,8 @@
 FILTER MATERIAL,# LAYERS (TOTAL),FLOW (L/MIN),RESISTANCE (mm H2O),% PENETRATION,% EFFICIENCY,GROUP
 Typical N95 Mask,1,85,9,1.8,98.2,N95
 Filti (2 layers),2,59.97,14.58,2.149,97.851,Filti
-Filti (1 layer),1,59.98,8.07,13.309,86.691,Filti
-Filti (1 layer),1,60.02,9.72,12.38,87.62,Filti
+Filti (1 layer) A,1,59.98,8.07,13.309,86.691,Filti
+Filti (1 layer) B,1,60.02,9.72,12.38,87.62,Filti
 Filtrete 1900 Furnace Filter ( l layer) (front facing),1,60.04,0.96,14.773,85.227,HVAC
 2 layers Kona 100% Cotton + 1 layer 1500 Filtrete Furnace Filter,3,60.29,8.15,19.15,80.85,HVAC
 1 layer Filti + 1 layer 6.5g Cotton Rip Stop,2,59.97,13.33,15.97,84.03,Filti
