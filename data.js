@@ -156,7 +156,7 @@ function tableModifiers() {
       trace1.marker.size.push(parseInt(size));
       trace1.marker.symbol.push(shape);
       
-      if (filtration > 30 && resistance < 15) {
+      if (resistance < 15) {
         bar1.x.unshift(name);
         bar1.y.unshift(filtration);
         bar1.text.unshift(resistance);
@@ -190,7 +190,7 @@ function tableModifiers() {
     title: 'Filter efficiency of most breathable materials',
     showlegend: false,
     margin: {
-      b:200
+      b:150
     },
     xaxis: {
       tickangle: 45
