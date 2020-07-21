@@ -106,16 +106,16 @@ function tableModifiers() {
     y: [],
     type: 'bar',
     text: [],
-    color:[],
-    colorscale: [
-      ['0', 'rgb(255, 193, 7)'],      
-      ['1.0', 'rgb(76, 175, 80)']   
-    ],
+
     hovertemplate: '<i>Material</i>: %{x}' + '<br>'+
                    '<i>Filtration:</i> %{y}' + '%<br>' +
                    '<i>Resistance (mmH20):</i> %{text}',     
     marker: {
-      color: 'rgb(76, 175, 80)'
+      color:[],
+      colorscale: [
+        ['0', 'rgb(255, 193, 7)'],      
+        ['1.0', 'rgb(76, 175, 80)']   
+      ]
     }
   };
   // Scrape data from table for scatter plot and bar graph
@@ -160,7 +160,7 @@ function tableModifiers() {
         bar1.x.unshift(name);
         bar1.y.unshift(filtration);
         bar1.text.unshift(resistance);
-        bar1.color.unshift(filtration-resistance)
+        bar1.marker.color.unshift(filtration-resistance)
       }
 
     }
@@ -190,9 +190,10 @@ function tableModifiers() {
     title: 'Filter efficiency of most breathable materials',
     showlegend: false,
     margin: {
-      b:125
+      b:150
     },
     xaxis: {
+      tickangle: -60
     }
   };
  
