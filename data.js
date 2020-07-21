@@ -188,7 +188,7 @@ function tableModifiers() {
   var barData = [bar1];
   
   var barLayout = {
-    title: 'Filter efficiency of most breathable materials',
+    title: 'Filter efficiencies of the most breathable materials',
     yaxis:{title: 'Filtration Efficiency (%)'},
     xaxis:{
       title: 'Materials with Resistance < 15 (hover to view details)',
