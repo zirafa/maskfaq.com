@@ -113,8 +113,7 @@ function tableModifiers() {
     marker: {
       color:[],
       colorscale: [
-        ['0.0', 'rgb(230, 74, 25)'],    
-        ['0.5', 'rgb(255, 193, 7)'],    
+        ['0.0', 'rgb(255, 193, 7)'],    
         ['1.0', 'rgb(76, 175, 80)'] 
       ]
     }
@@ -161,7 +160,7 @@ function tableModifiers() {
         bar1.x.unshift(name);
         bar1.y.unshift(filtration);
         bar1.text.unshift(resistance);
-        bar1.marker.color.unshift(resistance)
+        bar1.marker.color.unshift(100-resistance)
       }
 
     }
