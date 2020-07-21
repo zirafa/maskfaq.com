@@ -186,10 +186,12 @@ function tableModifiers() {
   var barLayout = {
     title: 'Filter efficiency of most breathable materials',
     showlegend: false,
+    margin: {
+      b:100
+    },
     xaxis: {
     }
   };
-  barLayout.margin.b = 100;
  
   Plotly.newPlot('bar-chart', barData, barLayout);
 
