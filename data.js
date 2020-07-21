@@ -193,7 +193,7 @@ function tableModifiers() {
       b:150
     },
     xaxis: {
-      tickangle: 45
+      tickangle: -45
     }
   };
  
