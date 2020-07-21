@@ -106,6 +106,11 @@ function tableModifiers() {
     y: [],
     type: 'bar',
     text: [],
+    color:[],
+    colorscale: [
+      ['0', 'rgb(255, 193, 7)'],      
+      ['1.0', 'rgb(76, 175, 80)']   
+    ],
     hovertemplate: '<i>Material</i>: %{x}' + '<br>'+
                    '<i>Filtration:</i> %{y}' + '%<br>' +
                    '<i>Resistance (mmH20):</i> %{text}',     
@@ -152,8 +157,10 @@ function tableModifiers() {
       trace1.marker.symbol.push(shape);
       
       if (filtration > 50 && resistance > 1 && resistance < 15) {
-        bar1.x.push(name);
-        bar1.y.push(filtration);
+        bar1.x.unshift(name);
+        bar1.y.unshift(filtration);
+        bar1.text.unshift(resistance);
+        bar1.color.unshift(filtration-resistance)
       }
 
     }
@@ -177,17 +184,13 @@ function tableModifiers() {
   Plotly.newPlot('scatter-plot', data, layout);    
 
   // Bar chart of efficiencies where resistance is between 1 and 15
-  // Reverse order to match scatter plot
-  bar1.x.reverse();
-  bar1.y.reverse();
-  bar1.text.reverse();
   var barData = [bar1];
   
   var barLayout = {
     title: 'Filter efficiency of most breathable materials',
     showlegend: false,
     margin: {
-      b:100
+      b:125
     },
     xaxis: {
     }
