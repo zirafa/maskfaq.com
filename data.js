@@ -106,7 +106,7 @@ function tableModifiers() {
     y: [],
     type: 'bar',
     text: [],
-
+    'name': '',
     hovertemplate: '<i>Material</i>: %{x}' + '<br>'+
                    '<i>Filtration:</i> %{y}' + '%<br>' +
                    '<i>Resistance (mmH20):</i> %{text}',     
@@ -159,7 +159,7 @@ function tableModifiers() {
       if (resistance < 15) {
         bar1.x.unshift(name);
         bar1.y.unshift(filtration);
-        bar1.text.unshift(resistance);
+       // bar1.text.unshift(resistance);
         bar1.marker.color.unshift(filtration-resistance)
       }
 
@@ -188,6 +188,8 @@ function tableModifiers() {
   
   var barLayout = {
     title: 'Filter efficiency of most breathable materials',
+    yaxis:{title: 'Filtration Efficiency (%)'},
+    xaxis:{title: 'Materials (hover to view details)'},
     showlegend: false,
     margin: {
       b:250
