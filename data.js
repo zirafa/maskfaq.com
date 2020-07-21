@@ -192,9 +192,7 @@ function tableModifiers() {
     yaxis:{title: 'Filtration Efficiency (%)'},
     xaxis:{
       title: 'Materials (hover to view details)',
-      ticks: "inside",
-      tickangle: -90,
-      tickmode:"array"
+      showticklabels:false 
     }
   };
  
