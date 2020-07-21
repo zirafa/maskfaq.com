@@ -189,8 +189,12 @@ function tableModifiers() {
   var barLayout = {
     title: 'Filter efficiency of most breathable materials',
     yaxis:{title: 'Filtration Efficiency (%)'},
-    xaxis:{title: 'Materials (hover to view details)'},
-    showlegend: false
+    xaxis:{
+      title: 'Materials (hover to view details)',
+      ticks: "inside",
+      tickangle: -90,
+      tickmode:"array"
+    }
   };
  
   Plotly.newPlot('bar-chart', barData, barLayout);
