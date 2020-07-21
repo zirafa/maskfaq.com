@@ -157,9 +157,9 @@ function tableModifiers() {
       trace1.marker.symbol.push(shape);
       
       if (resistance < 15) {
-        bar1.x.unshift(name);
+        // bar1.x.unshift(name);
         bar1.y.unshift(filtration);
-       // bar1.text.unshift(resistance);
+        bar1.text.unshift(resistance);
         bar1.marker.color.unshift(filtration-resistance)
       }
 
