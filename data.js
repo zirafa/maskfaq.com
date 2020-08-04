@@ -157,7 +157,8 @@ function tableModifiers() {
       trace1.marker.size.push(parseInt(size));
       trace1.marker.symbol.push(shape);
       
-      if (resistance < 15) {
+      // Grab data for a bar graph showing materials with low resistance
+      if (resistance < 10) {
         bar1.x.unshift(name);
         bar1.y.unshift(filtration);
         bar1.text.unshift(resistance);
@@ -184,14 +185,14 @@ function tableModifiers() {
   
   Plotly.newPlot('scatter-plot', data, layout);    
 
-  // Bar chart of efficiencies where resistance is between 1 and 15
+  // Bar chart of efficiencies where resistance is between 0 and 10
   var barData = [bar1];
   
   var barLayout = {
     title: 'Filter efficiencies of the most breathable materials',
     yaxis:{title: 'Filtration Efficiency (%)'},
     xaxis:{
-      title: 'Materials with Resistance < 15 (hover to view details)',
+      title: 'Materials with Resistance < 10 (hover to view details)',
       showticklabels:false,
       categoryorder: "min ascending"
     }
