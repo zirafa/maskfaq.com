@@ -59,8 +59,8 @@ function tableModifiers() {
   for (var i = 0, row; row = materialsData.rows[i]; i++) {
     for (var j = 0, col; col = row.cells[j]; j++) {
       //iterate through columns., col=5 is efficiency
-      // Breathability column. If > 15 flag with red color
-      if (j==3 && col.innerHTML > 15) {
+      // Breathability column. If > 10 flag with red color
+      if (j==3 && col.innerHTML > 10) {
         col.innerHTML = '<span style="color:#FF0000">' + col.innerHTML + '</span>';
       }
       // Efficiency column. If greater than 50 flag with green
