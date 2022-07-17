@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "type": "rich",
+  "version": "1.0",
+  "provider_name": "MaskFAQ",
+  "provider_url": "https://zirafa.github.io/maskfaq.com",
+  "title": "MaskFAQ Data Table",
+  "html": "<iframe src=\"https://zirafa.github.io/maskfaq.com/embed.html \" scrolling=\"no\" frameborder=\"0\" allowtransparency=\"true\" style=\"width: 100%; overflow: hidden;\"></iframe>"
+}
