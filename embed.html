@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Page setup -->
+    <meta charset="utf-8">
+    <title>MaskFAQ</title>
+    <meta name="description" content="Information about DIY mask materials to help everyone make the best choices they can when making their own DIY masks.">
+    <meta name="author" content="Chloe Schempf, Michigan Mask Response">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+  </head>
+  <body>
+  
+  <div id="scatter-plot">
+  </div>
+  <hr>
+  <div id="bar-chart">
+  </div>
+  <hr>
+  <small><i>Click on a column header to sort the rows.</i></small>
+  <div>
+    <input id="filter-table" type="text" placeholder="Search..">
+  </div>
+  <div id="materials-table"></div>
+
+            <p class="small">
+            <ul class="definitions">
+              <li><i><b>Material:</b> filter material(s) tested</i></li>
+              <li><i><b>Flow L/min:</b> volumetric flow rate. Set to ~60 L/min for a standard filter holder area of 100 cm^2.</i></li>
+              <li><i><b>Resistance (mm H20):</b> Resistance (pressure drop). A higher number means it will be harder to breathe. A typical N95 mask has a pressure drop around 9 mm H20, max of 35mm H20.</i></li>
+              <li><i><b>% Penetration:</b> percentage of test particles that passed through</i></li>
+              <li><i><b>% Efficiency:</b> percentage of test particles that could not pass through. An N95 mask has a minimum efficiency rating of 95%.</i></li>
+            </ul>
+            </p>
+            
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.1.0/tablesort.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.1.0/sorts/tablesort.number.min.js"></script>
+    <script type="text/javascript" src="https://zirafa.github.io/maskfaq.com/data.js"></script>
+  </body>
+</html>
